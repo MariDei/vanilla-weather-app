@@ -17,7 +17,77 @@
     <link href="css/styles.css" rel="stylesheet"/>   
     <title>Weather App</title>
 </head>
+<div class="weather-app-container">
+    <header>
+      <div class="search-box">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-auto">
+              <input
+                type="search"
+                placeholder="Enter your city here"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm header-text"
+              />
+            </div>
+            <div class="col-auto">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn-primary shadow-sm header-seach"
+              />
+            </div>
+            <div class="col-auto">
+              <button
+              class="btn-success w-100 current-location-button"
+              id="current-location-button">
+              📍
+              </button>
+            </div>
+          </div>
+        </form>
+          <p class="header-datatime" id="date"></p>  
+      </div>  
+    </header>
+    <main>
+      <div class="weather-condition-conteiner">
+        <br/>
+        <h1 class="hero-title" id="city"></h1>
+        <br/>
+        <div class="weather-temperature">
+          <span class="temperature" id="temperature"></span>
+          <span class="units">
+            <a class="active" href="#" id="celsius-link">℃</a><span class="units-C-F"> | </span> 
+            <a class="selected" href="#" id="fahrenheit-link">℉</a>
+          </span>
+        </div>  
+        <div class="row justify-content-evenly">
+          <div class="col-4">
+            <h3 class="weather-description" id="description"></h3>
+            <img class="weather-icon" id="icon"
+              src=""
+              alt="clear"/>
+          </div>
+          <div class="col-4">
+            <h3 class="weather-humidity">💧 Humidity: <strong><span class="humidity" id="humidity"></span></strong> %</h3>
+            <br/>
+            <h3 class="weather-wind"> 💨 Wind: <strong><span class="wind" id="wind"></span></strong> km/h</h3>
+          </div>
+        </div>
+      </div>  
+    </main>
+    <footer>
+      <div class="footer">
+        <small>
+          <a class="open-source-link" href="https://github.com/MariDei/weather-app" target="_blank">Open-source code</a> by
+          <a class="creator-link" href="https://www.instagram.com/deimari/" target="_blank">Marianna Dei</a>
+        </small>
+      </div>
+    </footer>
+</div>
 <body>
-    <script src="src/index.js"></script> 
+   <script src="src/index.js"></script> 
 </body>
 </html>
