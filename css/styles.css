@@ -1,6 +1,7 @@
 body {
+    display: block;
     background-image: url("https://media.istockphoto.com/id/1322277517/uk/фото/дика-трава-в-горах-на-заході-сонця.jpg?s=612x612&w=0&k=20&c=aZ4txqFK9gct4JWpoPa6QKfTZ6Bre60aMkHx3CeS75U=");
-    background-size: cover;
+    background-size: 100%;
     background-color: rgb(243, 243, 234);
     font-family: "Montserrat", sans-serif;
   }
