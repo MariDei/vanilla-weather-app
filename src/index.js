@@ -1,4 +1,4 @@
-  function formatDate(timestamp) {
+function formatDate(timestamp) {
     let date = new Date(timestamp);
     let hours = date.getHours();
     if (hours < 10) {
@@ -39,11 +39,12 @@
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
     windElement.innerHTML = Math.round(response.data.wind.speed);
-    dateElement.innerHTML = formatDate(response.data.dt * 1000); 
-    conElement.setAttribute(
-        "src",
-        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-      iconElement.setAttribute("alt", response.data.weather[0].description);
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
+  
     getForecast(response.data.coord);
   }
   
@@ -73,13 +74,13 @@
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
   dateElement.innerHTML = formatDate(currentTime);
-
+  
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", handleSubmit);
   
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
-
+  
   function displayFahrenheitTemperature(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
@@ -104,5 +105,4 @@
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
   
   searchCity("Kyiv");
-  
   
