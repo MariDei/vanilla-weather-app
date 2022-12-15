@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,17 +14,21 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"/>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
-    <link href="css/styles.css" rel="stylesheet"/>   
-    <title>Weather App</title>
-</head>
-<body>
-<div class="weather-app-container">
+    <script
+      src="https://kit.fontawesome.com/f99346d953.js"
+      crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet"/>     
+    <title>Weather App</title>  
+  </head>
+  <body>
+    <div class="weather-app-container">
     <header>
       <div class="search-box">
         <form class="search-form" id="search-form">
           <div class="row">
-            <div class="col-auto">
+            <div class="col-sm-auto">
               <input
                 type="search"
                 placeholder="Enter your city here"
@@ -34,14 +38,14 @@
                 class="form-control shadow-sm header-text"
               />
             </div>
-            <div class="col-auto">
+            <div class="col-sm-auto">
               <input
                 type="submit"
                 value="Search"
                 class="form-control btn-primary shadow-sm header-seach"
               />
             </div>
-            <div class="col-auto">
+            <div class="col-sm-auto">
               <button
               class="btn-success w-100 current-location-button"
               id="current-location-button">
@@ -49,15 +53,15 @@
               </button>
             </div>
           </div>
-        </form>
-          <p class="header-datatime" id="date"></p>  
-      </div>  
+        </form>          
+      </div> 
+      <div>
+        <p class="header-datatime" id="date"></p>  
+      </div> 
     </header>
     <main>
       <div class="weather-condition-conteiner">
-        <br/>
         <h1 class="hero-title" id="city"></h1>
-        <br/>
         <div class="weather-temperature">
           <span class="temperature" id="temperature"></span>
           <span class="units">
@@ -65,31 +69,32 @@
             <a class="selected" href="#" id="fahrenheit-link">℉</a>
           </span>
         </div>  
-        <div class="row justify-content-evenly">
-          <div class="col-4">
+        <div class="row weather-condition">
+          <div class="d-flex col-auto">
             <h3 class="weather-description" id="description"></h3>
             <img class="weather-icon" id="icon"
               src=""
-              alt="clear"/>
+              alt="clear"/>            
           </div>
-          <div class="col-4">
-            <h3 class="weather-humidity">💧 Humidity: <strong><span class="humidity" id="humidity"></span></strong> %</h3>
-            <br/>
-            <h3 class="weather-wind"> 💨 Wind: <strong><span class="wind" id="wind"></span></strong> km/h</h3>
+          <div class="d-flex col-auto">
+            <ul>
+              <li class="weather-humidity">💧 Humidity: <strong><span class="humidity" id="humidity"></span></strong> %</li>
+              <li class="weather-wind"> 💨 Wind: <strong><span class="wind" id="wind"></span></strong> km/h</li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="weather-forecast" id="forecast"></div>     
+      </div>  
+      <div class="weather-forecast" id="forecast"></div> 
     </main>
     <footer>
       <div class="footer">
         <small>
-          <a class="open-source-link" href="https://github.com/MariDei/vanilla-weather-app" target="_blank">Open-source code</a> by
+          <a class="open-source-link" href="https://github.com/MariDei/weather-app" target="_blank">Open-source code</a> by
           <a class="creator-link" href="https://www.instagram.com/deimari/" target="_blank">Marianna Dei</a>
         </small>
-      </div>
+      </div>  
     </footer>
-</div>
-<script src="src/index.js"></script> 
-</body>
+  </div>   
+  <script src="src/index.js"></script>
+  </body>
 </html>
+
