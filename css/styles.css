@@ -18,6 +18,7 @@ body {
 .row-search-form {
   display: flex;
   justify-content: space-evenly;
+  margin: 5px auto;
 }
 
 .header-text,
@@ -41,6 +42,7 @@ body {
 .header-text:hover,
 .header-text:focus {
   border: 1px solid rgba(174, 168, 168, 0.5);
+  cursor: pointer;
 }
 
 .header-seach {
@@ -49,9 +51,11 @@ body {
   padding: 7px 5px;
 }
 
-.header-seach:hover {
+.header-seach:hover,
+.header-seach:focus {
   background: #2c5d63;
   color: rgb(243, 243, 234);
+  border: 1px solid rgba(174, 168, 168, 0.5);
   cursor: pointer;
 }
 
@@ -115,7 +119,7 @@ body {
 
 .active:hover,
 .selected:hover {
-  color:#ae466e;
+  color:#a7466b;
   cursor: default;
 }
 
@@ -125,7 +129,7 @@ body {
 }
 
 .weather-description {
-  color:#ae466e;
+  color:#a7466b;
   font-size: 20px;
   line-height: 22px;
   font-weight: 600;
@@ -212,14 +216,14 @@ ul {
 }
 
 .open-source-link {
-  color:#ae466e;
+  color:#a7466b;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
 }
 
 .open-source-link:hover {
-  color:#ae466e;
+  color:#a7466b;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
