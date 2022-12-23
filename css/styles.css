@@ -1,6 +1,6 @@
 body {
-  display: flex;
-  justify-content:space-evenly;
+  display: -webkit-flex;
+  justify-self: auto;
   background-image: url("https://media.istockphoto.com/id/1322277517/uk/фото/дика-трава-в-горах-на-заході-сонця.jpg?s=612x612&w=0&k=20&c=aZ4txqFK9gct4JWpoPa6QKfTZ6Bre60aMkHx3CeS75U=");
   background-size: cover;
   font-family: "Montserrat", sans-serif;
@@ -8,7 +8,7 @@ body {
 
 .weather-app-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 200px auto;
   padding: 0 auto;
   border: none;
   border-radius: 3px;
@@ -28,16 +28,19 @@ body {
   border: 1px solid rgba(174, 168, 168, 0.5);
   font-size: 20px;
   line-height: 22px;
-  margin: 2px;
 }
 
 .header-text {
-  border: none;
   color: grey;
   text-align: center;
   font-weight: 400;
   margin-bottom: 5px;
   padding: 7px 5px;
+}
+
+.header-text:hover,
+.header-text:focus {
+  border: 1px solid rgba(174, 168, 168, 0.5);
 }
 
 .header-seach {
@@ -112,17 +115,22 @@ body {
 
 .active:hover,
 .selected:hover {
-  color:  #bd577e;
+  color:#ae466e;
   cursor: default;
 }
 
+.row-weather-condition {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .weather-description {
-  color:  #bd577e;
+  color:#ae466e;
   font-size: 20px;
   line-height: 22px;
   font-weight: 600;
   text-transform: capitalize;
-  margin: 0 17px;
+  margin: 0 auto;
 }
 
 ul {
@@ -204,14 +212,14 @@ ul {
 }
 
 .open-source-link {
-  color:  #bd577e;
+  color:#ae466e;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
 }
 
 .open-source-link:hover {
-  color: #bd577e;
+  color:#ae466e;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
