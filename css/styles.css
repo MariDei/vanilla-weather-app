@@ -1,5 +1,6 @@
 body {
   display: flex;
+  justify-content:space-evenly;
   background-image: url("https://media.istockphoto.com/id/1322277517/uk/фото/дика-трава-в-горах-на-заході-сонця.jpg?s=612x612&w=0&k=20&c=aZ4txqFK9gct4JWpoPa6QKfTZ6Bre60aMkHx3CeS75U=");
   background-size: cover;
   font-family: "Montserrat", sans-serif;
@@ -7,11 +8,16 @@ body {
 
 .weather-app-container {
   max-width: 1000px;
-  margin: 5px auto;
+  margin: 0 auto;
   padding: 0 auto;
   border: none;
   border-radius: 3px;
   box-shadow: 3px 3px 3px 3px rgba(5, 0, 0, 0.2);
+}
+
+.row-search-form {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header-text,
@@ -116,6 +122,7 @@ body {
   line-height: 22px;
   font-weight: 600;
   text-transform: capitalize;
+  margin: 0 17px;
 }
 
 ul {
@@ -130,10 +137,9 @@ ul {
   font-weight: 400;
 }
 
-.row {
-  display: table;
-  margin: 0 auto;
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .col-forecast {
@@ -144,7 +150,8 @@ ul {
   line-height: 20px;
   font-weight: 400;
   text-align: center;
-  margin: 3px 0;
+  margin: 5px 5px;
+  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   box-shadow: 3px 3px 3px 3px rgba(57, 55, 55, 0.5);
