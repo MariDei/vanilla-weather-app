@@ -1,14 +1,14 @@
-body {
+  body {
   display: flex;
   justify-content: space-around;
   background-image: url("https://media.istockphoto.com/id/1322277517/uk/фото/дика-трава-в-горах-на-заході-сонця.jpg?s=612x612&w=0&k=20&c=aZ4txqFK9gct4JWpoPa6QKfTZ6Bre60aMkHx3CeS75U=");
-  background-size: cover;
+  background-size: 1500px;
   font-family: "Montserrat", sans-serif;
 }
 
 .weather-app-container {
-  max-width: 1000px;
-  margin: 3px auto;
+  max-width: 1500px;
+  margin: 70px auto;
   padding: 0 auto;
   border: none;
   border-radius: 3px;
