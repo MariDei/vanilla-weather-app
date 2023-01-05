@@ -7,7 +7,7 @@
 }
 
 .weather-app-container {
-  min-width: 260px;
+  max-width: 576px;
   margin: 70px auto;
   padding: 0 auto;
   border: none;
