@@ -7,7 +7,7 @@ body {
 
 .weather-app-container {
   display: block;
-  max-width: 500px;
+  min-width: 300px;
   margin: 70px auto;
   padding: 0 auto;
   border: none;
@@ -231,13 +231,51 @@ ul {
 
 @media (max-width: 900px) {
   .weather-app-container {  
-      margin: 50px 0;
-      padding: 15px;
-      box-shadow: none;
+    margin: 50px auto;
+    padding: 0;
+    box-shadow: none;
   }  
 
-  .col-forecast {
-    margin: 0 1px;
-
+  .header-text,
+  .header-seach,
+  .current-location-button {
+  font-size: 18px;
   }
+
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .weather-temperature {
+    font-size: 40px;
+  }  
+
+  .active {
+    font-size: 20px;
+  }
+
+  .selected,
+  .units-C-F {
+    font-size: 20px;
+  }
+
+  .row-weather-condition {
+    padding: 5px;
+  }
+
+  .weather-description {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .weather-humidity,
+  .weather-wind {
+   font-size: 13px;
+}
+  .col-forecast {
+    margin: 0;
+    padding: 5px 4px;
+}
+
 }
